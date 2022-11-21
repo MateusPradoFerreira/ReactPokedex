@@ -1,0 +1,49 @@
+// ================================================================================
+// GLOBAIS
+// ================================================================================
+
+@import 'global/vars';
+@import 'global/mixins';
+@import 'global/functions';
+@import 'fonts/fonts';
+
+// ================================================================================
+// LAYOUTS
+// ================================================================================
+
+@import 'layouts/layouts';
+
+// ================================================================================
+// COMPONENTS
+// ================================================================================
+
+@import 'components/global';
+@import 'components/header';
+@import 'components/menu';
+@import 'components/card';
+@import 'components/barraPesquisa';
+@import 'components/filtro';
+@import 'components/pokemonSelecionado';
+@import 'components/title';
+@import 'components/nfPage';
+
+// ================================================================================
+// DEFINIONS
+// ================================================================================
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: var(--color-palette-b-gray);
+    overflow: scroll;
+}
+
+html {
+    scroll-behavior: smooth;
+}

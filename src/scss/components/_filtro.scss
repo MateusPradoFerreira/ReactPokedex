@@ -1,0 +1,126 @@
+// ================================================================================
+// FILTRO
+// ================================================================================
+
+.c-filtro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    z-index: 1;
+
+    &__input {
+        width: 175px;
+        height: 40px;
+
+        background: #ffffff;
+        box-shadow: 5px 5px 10px var(--color-palette-b-gray);
+        border-radius: 10px;
+        border: none;
+        font-size: 11px;
+        padding: 10px 20px;
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+
+    &__select {
+        width: 175px;
+        height: 40px;
+
+        background: #ffffff;
+        box-shadow: 5px 5px 10px var(--color-palette-b-gray);
+        border-radius: 10px;
+
+        &__input {
+            width: 167px;
+            height: 40px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 15px;
+            padding-right: 20px;
+            cursor: pointer;
+
+            input {
+                width: 65px;
+                font-size: 11px;
+                cursor: pointer;
+
+                &:disabled {
+                    background-color: #ffffff;
+                    border: none;
+                }
+            }
+
+            img {
+                width: 20px;
+                min-width: 20px;
+                height: 20px;
+                min-height: 20px;
+                opacity: 60%;
+            }
+
+            .setinha {
+                width: 20px;
+                min-width: 20px;
+                height: 20px;
+                min-height: 20px;
+                opacity: 60%;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        &__options {
+            list-style: none;
+            z-index: 999;
+            display: none;
+            position: absolute;
+
+            li {
+                width: 175px;
+                height: 30px;
+                border-radius: 5px;
+                background-color: #ffffff;
+                padding-left: 50px;
+                font-size: 11px;
+                display: flex;
+                align-items: center;
+                box-shadow: 5px 5px 10px var(--color-palette-b-gray);
+                letter-spacing: 1px;
+
+                &:hover {
+                    background-color: var(--color-palette-red);
+                    color: white;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__reset {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        min-height: 40px;
+
+        background: var(--color-palette-dg-gray);
+        box-shadow: 5px 5px 10px var(--color-palette-b-gray);
+        border-radius: 10px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        img {
+            width: 24px;
+            height: 24px;
+
+            filter: invert(100%);
+        }
+    }
+}

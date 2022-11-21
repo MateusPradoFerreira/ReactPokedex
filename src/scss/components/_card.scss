@@ -1,0 +1,152 @@
+// ================================================================================
+// CARD
+// ================================================================================
+
+.c-card {
+    &__pokemon {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        cursor: pointer;
+        z-index: 2;
+        height: 242px;
+        margin: 0;
+
+        margin-bottom: 24px;
+
+        &:hover {
+                transform: translateY(-7px);
+                transition: all 0.2s;
+
+                .c-card__pokemon__infos {
+                    box-shadow: 0px 15px 25px #ab47bc;
+                }
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            z-index: 1;
+        }
+
+        &__infos {
+            width: 100%;
+            padding-top: 75px;
+            margin-top: -75px;
+            background-color: white;
+            padding-bottom: 20px;
+            text-align: center;
+            box-shadow: 0px 7px 10px var(--color-palette-b-gray);
+            border-radius: 10px;
+
+            &__order {
+                font-weight: 600;
+                font-size: 14px;
+                color: var(--color-palette-order);
+            }
+
+            &__name {
+                font-weight: 700;
+                font-size: 16px;
+                letter-spacing: 1px;
+                color: var(--color-palette-b-lapis);
+            }
+
+            &__types {
+                display: flex;
+                margin-top: 5px;
+                gap: 10px;
+                justify-content: center;
+                width: 100%;
+
+                .type {
+                    width: auto;
+                    font-weight: 700;
+                    font-size: 10px;
+                    padding: 5px 20px;
+                    border-radius: 5px;
+                    color: var(--color-palette-b-lapis);
+                    background-color: var(--color-palette-l-gray);
+                }
+
+                .grass {
+                    background-color: var(--color-palette-type-grass);
+                }
+
+                .poison {
+                    background-color: var(--color-palette-type-poison);
+                }
+
+                .water {
+                    background-color: var(--color-palette-type-water);
+                }
+
+                .fire {
+                    background-color: var(--color-palette-type-fire);
+                }
+
+                .bug {
+                    background-color: var(--color-palette-type-bug);
+                }
+
+                .normal {
+                    background-color: var(--color-palette-type-normal);
+                }
+
+                .flying {
+                    background-color: var(--color-palette-type-flying);
+                }
+
+                .electric {
+                    background-color: var(--color-palette-type-electric);
+                }
+
+                .ground {
+                    background-color: var(--color-palette-type-ground);
+                }
+
+                .fairy {
+                    background-color: var(--color-palette-type-fairy);
+                }
+
+                .fighting {
+                    background-color: var(--color-palette-type-fighting);
+                }
+
+                .psychic {
+                    background-color: var(--color-palette-type-psychic);
+                }
+
+                .rock {
+                    background-color: var(--color-palette-type-rock);
+                }
+
+                .steel {
+                    background-color: var(--color-palette-type-steel);
+                }
+
+                .ghost {
+                    background-color: var(--color-palette-type-ghost);
+                }
+
+                .ice {
+                    background-color: var(--color-palette-type-ice);
+                }
+
+                .dark {
+                    background-color: var(--color-palette-type-dark);
+                }
+
+                .dragon {
+                    background-color: var(--color-palette-type-dragon);
+                }
+            }
+        }
+    }
+}
+
+.c-loading {
+    width: 250px;
+    height: 250px;
+}

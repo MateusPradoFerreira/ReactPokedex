@@ -1,0 +1,32 @@
+// ================================================================================
+// Title
+// ================================================================================
+
+.c-title {
+    &__infos {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin-top: 21px;
+        color: var(--color-palette-b-lapis);
+    }
+
+    &__pokemonName {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 38px;
+        text-align: center;
+        color: var(--color-palette-b-lapis);
+    }
+
+    &__order {
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        color: var(--color-palette-order);
+    }
+}
