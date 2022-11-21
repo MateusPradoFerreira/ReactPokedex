@@ -4,7 +4,7 @@ function Home() {
     return (
         <>
             <main className="l-main"> 
-                <p>home</p>
+                <h2>Seja bem vindo a Poketex!</h2>
             </main>
         </>
     );
