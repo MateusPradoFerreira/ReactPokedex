@@ -86,11 +86,11 @@ class Main extends Component {
                 if (pokemon.species.is_legendary == true) {
                     if (type == '') {
                         if (inicio == '' || fim == '') {
-                            if (pokemon.pokemon.name.indexOf(busca) != -1) {
+                            if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1) {
                                 return pokemon;
                             }
                         } else {
-                            if (pokemon.pokemon.name.indexOf(busca) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
+                            if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
                                 console.log(pokemon.order)
                                 return pokemon;
                             }
@@ -99,11 +99,11 @@ class Main extends Component {
                         if (pokemon.pokemon.types[1] == undefined) {
                             if (pokemon.pokemon.types[0].type.name == type) {
                                 if (inicio == '' || fim == '') {
-                                    if (pokemon.pokemon.name.indexOf(busca) != -1) {
+                                    if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1) {
                                         return pokemon;
                                     }
                                 } else {
-                                    if (pokemon.pokemon.name.indexOf(busca) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
+                                    if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
                                         return pokemon;
                                     }
                                 }
@@ -111,11 +111,11 @@ class Main extends Component {
                         } else {
                             if (pokemon.pokemon.types[0].type.name == type || pokemon.pokemon.types[1].type.name == type) {
                                 if (inicio == '' || fim == '') {
-                                    if (pokemon.pokemon.name.indexOf(busca) != -1) {
+                                    if (pokemon.pokemon.toUpperCase().indexOf(busca.toUpperCase()) != -1) {
                                         return pokemon;
                                     }
                                 } else {
-                                    if (pokemon.pokemon.name.indexOf(busca) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
+                                    if (pokemon.pokemon.toUpperCase().indexOf(busca.toUpperCase()) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
                                         return pokemon;
                                     }
                                 }
@@ -127,11 +127,11 @@ class Main extends Component {
                 if (pokemon.species.is_baby == true) {
                     if (type == '') {
                         if (inicio == '' || fim == '') {
-                            if (pokemon.pokemon.name.indexOf(busca) != -1) {
+                            if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1) {
                                 return pokemon;
                             }
                         } else {
-                            if (pokemon.pokemon.name.indexOf(busca) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
+                            if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
                                 return pokemon;
                             }
                         }
@@ -139,11 +139,11 @@ class Main extends Component {
                         if (pokemon.pokemon.types[1] == undefined) {
                             if (pokemon.pokemon.types[0].type.name == type) {
                                 if (inicio == '' || fim == '') {
-                                    if (pokemon.pokemon.name.indexOf(busca) != -1) {
+                                    if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1) {
                                         return pokemon;
                                     }
                                 } else {
-                                    if (pokemon.pokemon.name.indexOf(busca) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
+                                    if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
                                         return pokemon;
                                     }
                                 }
@@ -151,11 +151,11 @@ class Main extends Component {
                         } else {
                             if (pokemon.pokemon.types[0].type.name == type || pokemon.pokemon.types[1].type.name == type) {
                                 if (inicio == '' || fim == '') {
-                                    if (pokemon.pokemon.name.indexOf(busca) != -1) {
+                                    if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1) {
                                         return pokemon;
                                     }
                                 } else {
-                                    if (pokemon.pokemon.name.indexOf(busca) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
+                                    if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
                                         return pokemon;
                                     }
                                 }
@@ -167,11 +167,11 @@ class Main extends Component {
                 if (pokemon.species.is_mythical == true) {
                     if (type == '') {
                         if (inicio == '' || fim == '') {
-                            if (pokemon.pokemon.name.indexOf(busca) != -1) {
+                            if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1) {
                                 return pokemon;
                             }
                         } else {
-                            if (pokemon.pokemon.name.indexOf(busca) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
+                            if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
                                 return pokemon;
                             }
                         }
@@ -179,11 +179,11 @@ class Main extends Component {
                         if (pokemon.pokemon.types[1] == undefined) {
                             if (pokemon.pokemon.types[0].type.name == type) {
                                 if (inicio == '' || fim == '') {
-                                    if (pokemon.pokemon.name.indexOf(busca) != -1) {
+                                    if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1) {
                                         return pokemon;
                                     }
                                 } else {
-                                    if (pokemon.pokemon.name.indexOf(busca) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
+                                    if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
                                         return pokemon;
                                     }
                                 }
@@ -191,11 +191,11 @@ class Main extends Component {
                         } else {
                             if (pokemon.pokemon.types[0].type.name == type || pokemon.pokemon.types[1].type.name == type) {
                                 if (inicio == '' || fim == '') {
-                                    if (pokemon.pokemon.name.indexOf(busca) != -1) {
+                                    if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1) {
                                         return pokemon;
                                     }
                                 } else {
-                                    if (pokemon.pokemon.name.indexOf(busca) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
+                                    if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
                                         return pokemon;
                                     }
                                 }
@@ -206,11 +206,11 @@ class Main extends Component {
             } else {
                 if (type == '') {
                     if (inicio == '' || fim == '') {
-                        if (pokemon.pokemon.name.indexOf(busca) != -1) {
+                        if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1) {
                             return pokemon;
                         }
                     } else {
-                        if (pokemon.pokemon.name.indexOf(busca) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
+                        if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
                             return pokemon;
                         }
                     }
@@ -218,11 +218,11 @@ class Main extends Component {
                     if (pokemon.pokemon.types[1] == undefined) {
                         if (pokemon.pokemon.types[0].type.name == type) {
                             if (inicio == '' || fim == '') {
-                                if (pokemon.pokemon.name.indexOf(busca) != -1) {
+                                if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1) {
                                     return pokemon;
                                 }
                             } else {
-                                if (pokemon.pokemon.name.indexOf(busca) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
+                                if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
                                     return pokemon;
                                 }
                             }
@@ -230,11 +230,11 @@ class Main extends Component {
                     } else {
                         if (pokemon.pokemon.types[0].type.name == type || pokemon.pokemon.types[1].type.name == type) {
                             if (inicio == '' || fim == '') {
-                                if (pokemon.pokemon.name.indexOf(busca) != -1) {
+                                if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1) {
                                     return pokemon;
                                 }
                             } else {
-                                if (pokemon.pokemon.name.indexOf(busca) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
+                                if (pokemon.pokemon.name.toUpperCase().indexOf(busca.toUpperCase()) != -1 && pokemon.order >= inicio && pokemon.order <= fim) {
                                     return pokemon;
                                 }
                             }

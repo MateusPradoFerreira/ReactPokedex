@@ -29,7 +29,6 @@ function App() {
                 <Route path='/itens' element={<Itens />} />
                 <Route path='/movimentos' element={<Movimentos />} />
             </Routes>
-            <Footer />
         </Router>
     );
 }
