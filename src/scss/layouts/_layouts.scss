@@ -24,12 +24,17 @@
 
 .l-main {
     grid-area: main;
-    display: grid;
-    grid-template-areas: "Filtro SelectedPokemon" "CardBoxPokemon SelectedPokemon";
-    grid-template-rows: 120px auto;
-    grid-template-columns: 800px 1fr;
-    grid-gap: 20px;
     margin-bottom: 20px;
+
+    &__pokedex {
+        grid-area: main;
+        grid-template-areas: "Filtro SelectedPokemon" "CardBoxPokemon SelectedPokemon";
+        grid-template-rows: 120px auto;
+        grid-template-columns: 800px 1fr;
+        grid-gap: 20px;
+        display: grid;
+        margin-bottom: 20px;
+    }
 }
 
 // ================================================================================
@@ -56,7 +61,7 @@
     flex-wrap: wrap;
     z-index: 2;
     height: 0px;
-} 
+}
 
 .l-filtro {
     grid-area: Filtro;

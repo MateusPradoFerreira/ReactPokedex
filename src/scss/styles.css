@@ -106,14 +106,21 @@
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: main;
-  display: -ms-grid;
-  display: grid;
+  margin-bottom: 20px;
+}
+
+.l-main__pokedex {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: main;
       grid-template-areas: "Filtro SelectedPokemon" "CardBoxPokemon SelectedPokemon";
   -ms-grid-rows: 120px auto;
       grid-template-rows: 120px auto;
   -ms-grid-columns: 800px 1fr;
       grid-template-columns: 800px 1fr;
   grid-gap: 20px;
+  display: -ms-grid;
+  display: grid;
   margin-bottom: 20px;
 }
 
@@ -245,31 +252,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.c-menu__item__selected {
-  height: 80px;
-  padding: 10px 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #0fd6a1;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-}
-
-.c-menu__item__selected img {
-  width: 40px;
-  height: 40px;
-}
-
-.c-menu__item__selected p {
-  margin-left: 15px;
-  font-weight: 650;
-  font-size: 14px;
 }
 
 .c-menu__item:hover {
@@ -961,6 +943,22 @@
   font-size: 18px;
   line-height: 27px;
   color: var(--color-palette-order);
+}
+
+.c-text {
+  margin-top: 10px;
+  width: 800px;
+  text-transform: none;
+}
+
+.c-text a {
+  color: var(--color-palette-red);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.c-text a:hover {
+  text-decoration: underline;
 }
 
 .c-nfPage {

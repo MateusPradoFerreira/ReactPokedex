@@ -330,7 +330,7 @@ class Main extends Component {
 
         return (
             <>
-                <main className='l-main'>
+                <main className='l-main__pokedex'>
 
                     {/* Pokemon selecionado */}
                     <SelectedPokemon

@@ -1,0 +1,19 @@
+// ================================================================================
+// Title
+// ================================================================================
+
+.c-text { 
+    margin-top: 10px;
+    width: 800px;
+    text-transform: none;
+    
+    a {
+        color: var(--color-palette-red);
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
