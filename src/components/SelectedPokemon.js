@@ -13,18 +13,22 @@ function SelectedPokemon(props) {
     function trocaIconePokemon() {
 
         if (i % 2 == 0) {
-            document.getElementById('iconePokemonSelecionado').src = props.dadosPokemon.pokemon.sprites.front_shiny;
-            document.getElementById('shiny').src = 'https://cdn-icons-png.flaticon.com/512/1324/1324774.png';
+            if (props.dadosPokemon.pokemon.sprites.front_shiny != null) {
+                document.getElementById('iconePokemonSelecionado').src = props.dadosPokemon.pokemon.sprites.front_shiny;
+            }
 
+            document.getElementById('shiny').src = 'https://cdn-icons-png.flaticon.com/512/1324/1324774.png';
             document.getElementById('shiny').style.animation = 'selecionaPokemon 0.5s ease-in-out';
 
             setTimeout(() => {
                 document.getElementById('shiny').style.animation = 'none';
             }, "500");
         } else {
-            document.getElementById('iconePokemonSelecionado').src = props.dadosPokemon.pokemon.sprites.front_default;
-            document.getElementById('shiny').src = 'https://cdn-icons-png.flaticon.com/512/1324/1324652.png';
+            if (props.dadosPokemon.pokemon.sprites.front_default != null) {
+                document.getElementById('iconePokemonSelecionado').src = props.dadosPokemon.pokemon.sprites.front_default;
+            }
 
+            document.getElementById('shiny').src = 'https://cdn-icons-png.flaticon.com/512/1324/1324652.png';
             document.getElementById('shiny').style.animation = 'selecionaPokemon 0.5s ease-in-out';
 
             setTimeout(() => {
@@ -56,8 +60,17 @@ function SelectedPokemon(props) {
             <div className="l-selectedPokemon">
 
                 <div className="c-selectedPokemon__imgs">
-                    <img className="c-selectedPokemon__imgPokeball" id='selecionaPokemon' src="https://cdn-icons-png.flaticon.com/512/871/871516.png" alt="pokeball" />
-                    <img className="c-selectedPokemon__img" id="iconePokemonSelecionado" src={props.dadosPokemon.pokemon.sprites.front_default} />
+                    <img
+                        className="c-selectedPokemon__imgPokeball"
+                        id='selecionaPokemon'
+                        src="https://cdn-icons-png.flaticon.com/512/871/871516.png"
+                        alt="pokeball"
+                    />
+                    <img
+                        className="c-selectedPokemon__img"
+                        id="iconePokemonSelecionado"
+                        src={props.dadosPokemon.pokemon.sprites.front_default == null ? 'https://www.labdelivery.com.br/site/indisponivel/bg1.png' : props.dadosPokemon.pokemon.sprites.front_default}
+                    />
                 </div>
 
                 <div className="c-informaçõesPokemon" >
@@ -139,12 +152,12 @@ function SelectedPokemon(props) {
 
                     <div className='c-stats' >
 
-                        <Stats nameStat={'Hp'} base_stat={ props.dadosPokemon.pokemon.stats[0].base_stat } />
-                        <Stats nameStat={'Attack'} base_stat={ props.dadosPokemon.pokemon.stats[1].base_stat } />
-                        <Stats nameStat={'Defense'} base_stat={ props.dadosPokemon.pokemon.stats[2].base_stat } />
-                        <Stats nameStat={'Special Atk.'} base_stat={ props.dadosPokemon.pokemon.stats[3].base_stat } />
-                        <Stats nameStat={'Special Def.'} base_stat={ props.dadosPokemon.pokemon.stats[4].base_stat } />
-                        <Stats nameStat={'Speed'} base_stat={ props.dadosPokemon.pokemon.stats[5].base_stat } />
+                        <Stats nameStat={'Hp'} base_stat={props.dadosPokemon.pokemon.stats[0].base_stat} />
+                        <Stats nameStat={'Attack'} base_stat={props.dadosPokemon.pokemon.stats[1].base_stat} />
+                        <Stats nameStat={'Defense'} base_stat={props.dadosPokemon.pokemon.stats[2].base_stat} />
+                        <Stats nameStat={'Special Atk.'} base_stat={props.dadosPokemon.pokemon.stats[3].base_stat} />
+                        <Stats nameStat={'Special Def.'} base_stat={props.dadosPokemon.pokemon.stats[4].base_stat} />
+                        <Stats nameStat={'Speed'} base_stat={props.dadosPokemon.pokemon.stats[5].base_stat} />
 
                     </div>
 
