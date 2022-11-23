@@ -2,6 +2,8 @@
 
 import Select from './Select';
 
+import BarraPesquisa from './BarraPesquisa';
+
 var typeList = [
     'Bug',
     'Dark',
@@ -69,12 +71,8 @@ function Filter(props) {
 
     return (
         <div className='l-filtro'>
-            <div className="c-barraPesquisa" >
-                <input className="c-barraPesquisa__input" id="busca" placeholder="Procure pelo seu Pokemon" onChange={() => props.functionBuscar()} />
-                <button className="c-barraPesquisa__button" type="button" value='1' onClick={() => props.functionBuscar()}>
-                    <img id="pokebolaFiltro" src="https://cdn-icons-png.flaticon.com/512/1068/1068729.png" alt="img" />
-                </button>
-            </div>
+    
+            <BarraPesquisa placeholder={'Procure pelo seu Pokemon'} functionBuscar={props.functionBuscar} id_busca={'busca'} />
 
             <div className="c-filtro" >
 

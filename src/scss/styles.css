@@ -114,8 +114,8 @@
   -ms-grid-column: 2;
   grid-area: main;
       grid-template-areas: "topHed SelectedPokemon" "Filtro SelectedPokemon" "CardBoxPokemon SelectedPokemon";
-  -ms-grid-rows: 50px 120px auto;
-      grid-template-rows: 50px 120px auto;
+  -ms-grid-rows: 57px 120px auto;
+      grid-template-rows: 57px 120px auto;
   -ms-grid-columns: 800px 1fr;
       grid-template-columns: 800px 1fr;
   grid-gap: 20px;

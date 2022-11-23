@@ -29,7 +29,7 @@
     &__pokedex {
         grid-area: main;
         grid-template-areas: "topHed SelectedPokemon" "Filtro SelectedPokemon" "CardBoxPokemon SelectedPokemon";
-        grid-template-rows: 50px 120px auto;
+        grid-template-rows: 57px 120px auto;
         grid-template-columns: 800px 1fr;
         grid-gap: 20px;
         display: grid;
