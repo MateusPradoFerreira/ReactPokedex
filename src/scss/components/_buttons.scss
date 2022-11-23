@@ -1,0 +1,23 @@
+// ================================================================================
+// BUTTONS
+// ================================================================================
+
+.c-shinyButton {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    button {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border: none;
+        background-color: #d1245b00;
+
+        img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+        }
+    }
+}

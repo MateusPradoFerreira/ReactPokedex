@@ -2,10 +2,10 @@
 // GLOBAIS
 // ================================================================================
 
-@import 'global/vars';
-@import 'global/mixins';
-@import 'global/functions';
 @import 'fonts/fonts';
+@import 'global/functions';
+@import 'global/mixins';
+@import 'global/vars';
 
 // ================================================================================
 // LAYOUTS
@@ -17,16 +17,18 @@
 // COMPONENTS
 // ================================================================================
 
+@import 'components/barraPesquisa';
+@import 'components/buttons';
+@import 'components/card';
+@import 'components/filtro';
 @import 'components/global';
 @import 'components/header';
 @import 'components/menu';
-@import 'components/card';
-@import 'components/barraPesquisa';
-@import 'components/filtro';
-@import 'components/pokemonSelecionado';
-@import 'components/title';
-@import 'components/text';
 @import 'components/nfPage';
+@import 'components/pokemonSelecionado';
+@import 'components/stats';
+@import 'components/text';
+@import 'components/title';
 
 // ================================================================================
 // DEFINIONS

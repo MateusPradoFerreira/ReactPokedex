@@ -96,6 +96,10 @@ function SelectedPokemon(props) {
                         <button onClick={() => props.nextPokemon(props.dadosPokemon.order)}> {'>'} </button>
                     </div>
 
+                    <h2 className="c-title__genus"> {props.dadosPokemon.species.genera[7].genus} </h2>
+
+
+
                     <div
                         className='c-card__pokemon__infos__types'>
                         {props.dadosPokemon.pokemon.types.map((type) => (
@@ -103,17 +107,17 @@ function SelectedPokemon(props) {
                         ))}
                     </div>
 
-                    <h2 className="c-title__infos"> variantes </h2>
+                    <h2 className="c-title__infos"> variações </h2>
 
                     <div className='c-flexBox'>
-                        {props.dadosPokemon.species.varieties.map((pokemon) => (
+                        {props.dadosPokemon.species.varieties.map((variante) => (
                             <button
                                 type="button"
                                 className='c-variante'
-                                key={pokemon.pokemon.name}
-                                value={pokemon.pokemon.url}
+                                key={variante.pokemon.name}
+                                value={variante.pokemon.url}
                                 onClick={(ev) => chamaVariante(ev.target.value)}
-                            >{pokemon.pokemon.name.replace('-', ' ')}</button>
+                            >{variante.pokemon.name.replace('-', ' ')}</button>
                         ))}
                     </div>
 
@@ -159,6 +163,18 @@ function SelectedPokemon(props) {
                         <Stats nameStat={'Special Def.'} base_stat={props.dadosPokemon.pokemon.stats[4].base_stat} />
                         <Stats nameStat={'Speed'} base_stat={props.dadosPokemon.pokemon.stats[5].base_stat} />
 
+                    </div>
+
+                    <h2 className="c-title__infos"> Grupos de ovos </h2>
+
+                    <div className='c-flexBox'>
+                        {props.dadosPokemon.species.egg_groups.map((egg_group) => (
+                            <div
+                                className="c-abilidade"
+                                key={egg_group.name} >
+                                {egg_group.name.replace('-', ' ')}
+                            </div>
+                        ))}
                     </div>
 
                 </div>
