@@ -331,6 +331,10 @@ class Main extends Component {
         return (
             <>
                 <main className='l-main__pokedex'>
+                    
+                    <div className='l-topHed'>
+                        <h1 className='c-title__topPage'>Pokedex </h1>
+                    </div>
 
                     {/* Pokemon selecionado */}
                     <SelectedPokemon

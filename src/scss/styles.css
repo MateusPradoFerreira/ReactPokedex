@@ -113,9 +113,9 @@
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: main;
-      grid-template-areas: "Filtro SelectedPokemon" "CardBoxPokemon SelectedPokemon";
-  -ms-grid-rows: 120px auto;
-      grid-template-rows: 120px auto;
+      grid-template-areas: "topHed SelectedPokemon" "Filtro SelectedPokemon" "CardBoxPokemon SelectedPokemon";
+  -ms-grid-rows: 50px 120px auto;
+      grid-template-rows: 50px 120px auto;
   -ms-grid-columns: 800px 1fr;
       grid-template-columns: 800px 1fr;
   grid-gap: 20px;
@@ -150,7 +150,7 @@
 }
 
 .l-filtro {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: Filtro;
   width: 100%;
@@ -158,7 +158,7 @@
 
 .l-selectedPokemon {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 2;
   grid-area: SelectedPokemon;
   padding-top: 20px;
@@ -171,6 +171,12 @@
 
 .pokemonNaoEncontrdo {
   display: none;
+}
+
+.l-topHed {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: topHed;
 }
 
 .c-barraPesquisa {
@@ -1036,6 +1042,12 @@
   margin-top: -5px;
   text-align: center;
   color: var(--color-palette-gray);
+}
+
+.c-title__topPage {
+  color: var(--color-palette-b-lapis);
+  font-size: 35px;
+  letter-spacing: 1px;
 }
 
 * {
