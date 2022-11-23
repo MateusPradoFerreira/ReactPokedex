@@ -286,7 +286,7 @@ class Main extends Component {
             document.getElementById('shiny').src = 'https://cdn-icons-png.flaticon.com/512/1324/1324652.png';
         }
 
-        window.scroll(0, 180)
+        window.scroll(0, 170)
     }
 
     // Vai pro proximo pokemon

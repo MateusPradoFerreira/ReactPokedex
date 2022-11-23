@@ -14,7 +14,7 @@ function Header(porps) {
                 </div>
 
                 <div className='c-socialBox'>
-                    <SocialMediaIcon backgroundColor={'#FF000F'} link={''} icon={'https://cdn-icons-png.flaticon.com/512/1384/1384031.png'} />
+                    <SocialMediaIcon backgroundColor={'#5c6bc0'} link={'https://www.linkedin.com/in/mateus-prado-8820a6257/'} icon={'https://cdn-icons-png.flaticon.com/512/3128/3128219.png'} />
                     <SocialMediaIcon backgroundColor={'#FFC700'} link={'https://github.com/MateusPratu'} icon={'https://cdn-icons-png.flaticon.com/512/1051/1051377.png'} />
                     <SocialMediaIcon backgroundColor={'#79DE4F'} link={'https://www.figma.com/file/yB7LoUwnJal4be1ohQsT88/Pokedex?node-id=127%3A2&t=00Wy5giWffNiyB4v-0'} icon={'https://cdn-icons-png.flaticon.com/512/8297/8297918.png'} />
                 </div>

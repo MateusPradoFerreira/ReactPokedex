@@ -43,4 +43,18 @@
         font-size: 35px;
         letter-spacing: 1px;
     }
+
+    &__nameItem {
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: var(--color-palette-b-lapis);
+    }
+
+    &__category {
+        font-weight: 700;
+        font-size: 13px;
+        text-align: center;
+        color: #c4c4c4;
+    }
 }

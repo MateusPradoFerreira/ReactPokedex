@@ -22,7 +22,7 @@ class CardPokemon extends Component {
                 {/* informaçoes do pokemon */}
                 <div className='c-card__pokemon__infos'>
                     <p className='c-card__pokemon__infos__order'>#{this.props.dadosPokemon.order}</p>
-                    <p className='c-card__pokemon__infos__name'>{this.state.dadosPokemon.pokemon.name}</p>
+                    <p className='c-title__nameItem'>{this.state.dadosPokemon.pokemon.name}</p>
 
                     {/* tipos do pokemon */}
                     <div className='c-card__pokemon__infos__types'>

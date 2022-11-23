@@ -63,6 +63,13 @@
     height: 0px;
 }
 
+.l-cardBoxItens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 21px;
+}
+
 .l-filtro {
     grid-area: Filtro;
     width: 100%;
